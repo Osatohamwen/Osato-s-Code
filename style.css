@@ -1,0 +1,327 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+main{
+    background-color: rgb(83, 83, 83);
+    height: 600vh;
+    color: black;
+    /* gap: 20px; */
+}
+.b{
+    border: 1px solid white;
+}
+.nav-bar{
+    display: flex;
+    height: 5%;
+    /* width: 100%; */
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    line-height: 24px;
+    letter-spacing: 1.5px;
+}
+.icon > p, .icon > i{
+    font-size: 25px;
+    font-weight: 700;
+}
+.green{
+    color: rgb(19, 65, 19);
+    
+}
+.b-violet{
+    color: blueviolet;
+}
+.orange-red{
+    color: orangered;
+}
+.orange{
+    color: orange;
+}
+.white{
+    color: white;
+}
+nav{
+    display: flex;
+    width: 90%;
+}
+ul{
+    justify-content: space-evenly;
+    width: 100%;
+}
+ul,li,a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border: none;
+    color: rgb(202, 161, 240);
+    font-size: 16px;
+    font-weight: 500;
+}
+a:hover{
+    /* padding: 10px; */
+    color: green;
+    font-size: 16px;
+    font-weight: 700;
+}
+li{
+    list-style: none;
+}
+button{
+    text-decoration: none;
+    border: 1px solid blueviolet;
+    color: white;
+    background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+.btn:hover{
+    background-color: blueviolet;
+    color: white;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 7%;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    letter-spacing: -1px;
+    word-spacing: 2px;
+}
+.content > h2{
+    color: rgb(249, 252, 249);
+    font-size: 30px;
+}
+.content > p{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(129, 136, 129);
+}
+.container-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    height: 80%;
+    padding: 0 20px;
+}
+.content-wrap-1, .content-wrap-2{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    height: 1400px;
+}
+.container-wrapper a:hover{
+    text-decoration: underline;
+    color: rgb(240, 126, 84);
+}
+.content-wrap-1 > :nth-child(1){
+    background-image: url("./assets/img-white-ball.jpg");
+    border-radius: 15px;
+    /* opacity: 0.5; */
+}
+.content-wrap-1 div, .content-wrap-2 div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0 5px 0 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content-wrap-1 > :nth-child(2){
+    background-image: url("./assets/adobe-img.jpg");
+    border-radius: 15px;
+}
+.content-wrap-1 > :nth-child(3){
+    background-image: url("./assets/img-blue.jpg");
+    border-radius: 15px;
+}
+.content-wrap-1 > :nth-child(4){
+    background-image: url("./assets/text-img.jpg");
+    border-radius: 15px;
+}
+.content-wrap-2 > :nth-child(1){
+    background-image: url("./assets/img-terkini.jpg");
+    border-radius: 15px;
+}
+.content-wrap-2 > :nth-child(2){
+    background-image: url("./assets/img-pink.jpg");
+    border-radius: 15px;
+}
+.content-wrap-2 > :nth-child(3){
+    background-image: url("./assets/img-blueNature.jpg");
+    border-radius: 15px;
+}
+.content-wrap-2 > :nth-child(4){
+    background-image: url("./assets/img-white.jpg");
+    border-radius: 15px;
+}
+.hidden-content{
+    gap: 15px;
+    color: orange;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 0;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 8%;
+}
+.contact-us-logo{
+    display: flex;
+    width: 20%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer > div > h4{
+    font-size: 22px;
+    color: rgb(9, 100, 9);
+}
+.contact-us-logo > a{
+    padding: 5px;
+}
+.contact-us-logo > a > i{
+    font-size: 18px;
+    color: white;
+}
+.contact-us-logo > a > i:hover{
+    color: white;
+}
+.contact-us-logo > a:hover{
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+}
+@media (min-width: 768px) {
+    main{
+        background-color: white;
+        height: 250vh;
+        color: black;
+        /* gap: 20px; */
+    }
+    ul, li, a{
+        color: blueviolet;
+    }
+    .content-wrap-1, .content-wrap-2{
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        height: 450px;
+    }
+    .content-wrap-1 div, .content-wrap-2 div{
+        width: 100%;
+    }
+    .contact-us-logo > a > i{
+        font-size: 20px;
+        color: grey;
+    }
+    .white{
+        color: black;
+    }
+    .footer > div > h4{
+        font-size: 22px;
+        color: blueviolet;
+    }
+    .contact-us-logo > a:hover{
+        background-color: blueviolet;
+    }
+    .container-wrapper{
+        height: 70%;
+    }
+    .content{
+        height: 10%;
+    }
+    .nav-bar{
+        height: 8%;
+    }
+    .footer{
+        height: 12%;
+    }
+    .content > h2{
+        color: rgb(42, 105, 42);
+        font-size: 30px;
+    }
+    .content > p{
+        color: rgb(96, 104, 96);
+    }
+    
+}
+@media (min-width: 1024px) {
+    main{
+        background-color: black;
+        height: 250vh;
+        color: white;
+        /* gap: 20px; */
+    }
+    .content-wrap-1, .content-wrap-2{
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 450px;
+    }
+    .content-wrap-1 div, .content-wrap-2 div{
+        width: 100%;
+    }
+    .container-wrapper{
+        height: 70%;
+    }
+    .content{
+        height: 10%;
+    }
+    .white{
+        color: white;
+    }
+    .nav-bar{
+        height: 8%;
+    }
+    .footer{
+        height: 12%;
+    }
+    .content > h2{
+        color: rgb(96, 104, 96);
+        font-size: 28px;
+    }
+    .content > p{
+        color: rgb(96, 104, 96);
+    }
+    
+}
+@media (min-width: 1280px) {
+    main{
+        height: 100vh;
+        color: white;
+    }
+    .content-wrap-1, .content-wrap-2{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        height: 180px;
+    }
+    .content-wrap-1 div, .content-wrap-2 div{
+        width: 100%;
+    }
+    .container-wrapper{
+        height: 70%;
+    }
+    .content{
+        height: 10%;
+    }
+    .content > h2{
+        color: rgb(96, 104, 96);
+        font-size: 26px;
+    }
+    .content > p{
+        color: rgb(96, 104, 96);
+    }
+    .nav-bar{
+        height: 8%;
+    }
+    .footer{
+        height: 12%;
+    }
+}
