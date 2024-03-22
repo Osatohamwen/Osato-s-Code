@@ -7,7 +7,7 @@ main{
     background-color: rgb(83, 83, 83);
     height: 600vh;
     color: black;
-    /* gap: 20px; */
+    font-family: "Marcellus", serif;
 }
 .b{
     border: 1px solid white;
@@ -16,7 +16,6 @@ main{
     display: flex;
     height: 5%;
     padding: 0 10px;
-    /* width: 100%; */
 }
 .icon{
     display: flex;
@@ -71,7 +70,6 @@ ul > i{
     display: inline-flex;
 }
 a:hover{
-    /* padding: 10px; */
     color: green;
     font-size: 16px;
     font-weight: 700;
@@ -131,7 +129,6 @@ button{
 .content-wrap-1 > :nth-child(1){
     background-image: url("./assets/img-white-ball.jpg");
     border-radius: 15px;
-    /* opacity: 0.5; */
 }
 .content-wrap-1 div, .content-wrap-2 div{
     display: flex;
