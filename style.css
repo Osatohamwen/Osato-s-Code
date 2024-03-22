@@ -15,6 +15,7 @@ main{
 .nav-bar{
     display: flex;
     height: 5%;
+    padding: 0 10px;
     /* width: 100%; */
 }
 .icon{
@@ -50,7 +51,8 @@ nav{
     width: 90%;
 }
 ul{
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    gap: 20px;
     width: 100%;
 }
 ul,li,a{
@@ -61,6 +63,12 @@ ul,li,a{
     color: rgb(202, 161, 240);
     font-size: 16px;
     font-weight: 500;
+}
+nav > ul > li{
+    display: none;
+}
+ul > i{
+    display: inline-flex;
 }
 a:hover{
     /* padding: 10px; */
@@ -234,6 +242,10 @@ button{
     .contact-us-logo > a:hover{
         background-color: blueviolet;
     }
+    button{
+        color: rgb(89, 122, 89);
+        border: 1px solid rgb(89, 122, 89);
+    }
     .container-wrapper{
         height: 70%;
     }
@@ -247,11 +259,14 @@ button{
         height: 12%;
     }
     .content > h2{
-        color: rgb(42, 105, 42);
+        color: rgb(156, 177, 156);
         font-size: 30px;
     }
     .content > p{
         color: rgb(96, 104, 96);
+    }
+    nav > ul > li{
+        display: none;
     }
     
 }
@@ -261,6 +276,9 @@ button{
         height: 250vh;
         color: white;
         /* gap: 20px; */
+    }
+    nav > ul > li{
+        display: none;
     }
     .content-wrap-1, .content-wrap-2{
         grid-template-columns: 1fr 1fr 1fr;
@@ -298,6 +316,12 @@ button{
         height: 100vh;
         color: white;
     }
+    nav > ul > li{
+        display: inline-flex;
+    }
+    ul{
+        justify-content: space-evenly;
+    }
     .content-wrap-1, .content-wrap-2{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         height: 180px;
@@ -323,5 +347,8 @@ button{
     }
     .footer{
         height: 12%;
+    }
+    nav > ul > :nth-child(8){
+        display: none;
     }
 }
